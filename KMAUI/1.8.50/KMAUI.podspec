@@ -33,7 +33,12 @@ s.source_files = "KMAUI/**/*.{swift}"
 s.resources = "KMAUI/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
 
 # 10
-s.swift_version = "5.0"
+s.swift_version = "5.1"
+
+# 11
+s.resource_bundles = {
+    'KMAUI' => ["KMAUI/UI\ Items/*.lproj/*.strings"]
+}
 
 s.dependency 'Alamofire', '~> 5.0.0-rc.3'
 s.dependency 'SwiftyJSON', '~> 4.0'
